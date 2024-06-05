@@ -28,13 +28,14 @@ input {
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 15px;
     transition: all 0.3s;
     border-radius: 8px;
+    color: #a1a0a0;
 }
 
 input:focus {
-    border-color: #5b08a7;
+    border-color: #6e2998;
 }
 
 .btn,
@@ -43,7 +44,7 @@ input:focus {
 .btn-delete {
     font-family: "Roboto", sans-serif;
     outline: 0;
-    background: #5b08a7;
+    background: #6e2998;
     border: 0;
     text-decoration: none;
     padding: 15px;
@@ -87,7 +88,7 @@ input:focus {
 .btn:hover,
 .btn:active,
 .btn:focus {
-    background: #5b08a7;
+    background: #7b479c;
 }
 
 .text-center {
@@ -175,7 +176,7 @@ table > tbody > tr > td {
 }
 
 .login-signup-form .form .message a {
-    color: #5b08a7;
+    color: #783c9c;
     text-decoration: none;
 }
 

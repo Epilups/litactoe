@@ -5,11 +5,11 @@ import {useStateContext} from "../contexts/ContextProvider.jsx";
 import router from "../router.jsx";
 
 const NavbarContainer = styled.nav`
-    height: 100px;
-    background-color: #161512;
+    height: 110px;
+    background: linear-gradient(180deg, rgb(48, 45, 45) 10%, rgb(34, 33, 37) 45%, rgb(22, 21, 18) 100%);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding: 10px 20px;
 `;
 
@@ -30,6 +30,7 @@ const DropdownContent = styled.div`
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 5px;
 
   ${NavItem}:hover & {
     display: block;
@@ -41,6 +42,7 @@ const DropdownLink = styled(Link)`
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border-radius: 5px;
 
   &:hover {
     background-color: #575757;
@@ -56,7 +58,7 @@ const Button = styled.button`
   padding: 10px;
 
   &:hover {
-    color: #ffcc00;
+    color: #a19da3;
   }
 `;
 
@@ -68,7 +70,7 @@ const LogoButton = styled.button`
     cursor: pointer;
 
     &:hover {
-        color: #ffcc00;
+        color: #a19da3;
     }
 `;
 
@@ -107,7 +109,7 @@ export default function TopNavbar() {
                 <NavItem>
                     <Button>PLAY</Button>
                     <DropdownContent>
-                        <DropdownLink to="/option1">Create a game</DropdownLink>
+                        <DropdownLink to="/lobby">Create a game</DropdownLink>
                     </DropdownContent>
                 </NavItem>
 
